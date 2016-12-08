@@ -1,6 +1,4 @@
 <?php
-
-	namespace Dynamizer;
 	
 	class aLoad {
 		
@@ -34,8 +32,8 @@
 	}
 	
 	
-	$aload = new \Dynamizer\aLoad();
+	$aload = new aLoad();
 	$aload->classDir("classes/");
-	\Dynamizer\aLoad::register();
+	aLoad::register();
 
 ?>
