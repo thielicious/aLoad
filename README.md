@@ -2,8 +2,6 @@
 
 Automatically loads classes from a given path
 
-#### [Documentation](http:thielicious.github.io/#aload_doc) | [Downloads](http:thielicious.github.io/#aload_dls) | [Examples](http:thielicious.github.io/#aload_demo) | [Licence](http:thielicious.github.io/#aload_lic) ####
-
 ---
 <br>
 
@@ -22,20 +20,19 @@ This API requires no additional frameworks or libraries.
 Use your CLI and enter the following to clone:<br>
 <code>
 git clone https://github.com/thielicious/aLoad.git
-</code><br>
-<br>
-Or click below to choose your download option:<br>
-» [Download aLoad](http://thielicious.github.io/#aload_dls)
-<br>
-<br>
-For a detailed installation click [here](http://thielicious.github.io/#aload_doc).
+</code>
 <br>
 <br>
 
 
 ##USAGE
 
-Click [here](http://thielicious.github.io/#aload_doc) for detailed information about the usage.
+Create an object of it and define the folder where your classes exist. If the classes are in the same folder as aLoad, you don't have to define the folder.
+<code>
+$aload = new aLoad();
+$aload->classDir("classes/"); 	// optional
+aLoad::register();
+</code>
 <br>
 <br>
 
