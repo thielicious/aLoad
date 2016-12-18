@@ -14,7 +14,7 @@ aLoad ('a' abbr. for **auto**) is a flexible auto loader for classes using a giv
 
 ##SETUP INFORMATION
 
-This API requires no additional frameworks or libraries.
+This script requires no additional frameworks or libraries.
 <br>
 <br>
 Use your CLI and enter the following to clone:<br>
@@ -27,12 +27,18 @@ git clone https://github.com/thielicious/aLoad.git
 
 ##USAGE
 
-Create an object of it and define the folder where your classes exist. If the classes are in the same folder as aLoad, you don't have to define the folder.
+Create an object of it and define the folder if your PHP clases reside in a different directory. 
 <pre>
 <code>
 $aload = new aLoad(); 	// optional
 $aload->classDir("classes/"); 	// optional
 aLoad::register();
+</code>
+</pre>
+And then, include the aLoad class in your php page.
+<pre>
+<code>
+require_once "aLoad.class.php";
 </code>
 </pre>
 <br>

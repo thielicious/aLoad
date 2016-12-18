@@ -25,15 +25,15 @@
 
 		private function load_class($class_name) {
 			$file = $this->class_dir.strtolower(str_replace("\\", "/", $class_name)).".class.php";
-			if(file_exists($file)) {
+			if (file_exists($file)) {
 				require_once($file);
 			}
 		}
 	}
 	
 	
-	$aload = new aLoad();
-	$aload->classDir("classes/");
+	$aload = new aLoad();			// optional
+	$aload->classDir("classes/");	// optional
 	aLoad::register();
 
 ?>
