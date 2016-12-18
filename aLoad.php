@@ -32,7 +32,7 @@
 	}
 	
 	
-	$aload = new aLoad();			// optional
+	$aload = new aLoad();		// optional
 	$aload->classDir("classes/");	// optional
 	aLoad::register();
 
