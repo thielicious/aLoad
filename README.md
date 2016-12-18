@@ -30,7 +30,7 @@ git clone https://github.com/thielicious/aLoad.git
 Create an object of it and define the folder where your classes exist. If the classes are in the same folder as aLoad, you don't have to define the folder.
 <pre>
 <code>
-$aload = new aLoad();
+$aload = new aLoad(); 	// optional
 $aload->classDir("classes/"); 	// optional
 aLoad::register();
 </code>
