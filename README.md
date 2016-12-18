@@ -1,6 +1,6 @@
 #aLoad
 
-Automatically loads classes from a given path
+(PHP) Automatically loads classes from a given path
 
 ---
 <br>
