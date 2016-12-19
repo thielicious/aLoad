@@ -27,7 +27,7 @@ git clone https://github.com/thielicious/aLoad.git
 
 ##USAGE
 
-Create an object of it and define the folder if your PHP clases reside in a different directory. 
+Create an object of it and define the folder if your PHP classes reside in a different directory. 
 <pre>
 <code>
 $aload = new aLoad(); 	// optional
