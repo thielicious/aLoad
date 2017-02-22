@@ -27,18 +27,18 @@ git clone https://github.com/thielicious/aLoad.git
 
 ##USAGE
 
-<code>aload::register([modules], path);</code>
+<code>aload::register([modules], path);</code><br>
 Simply register modules and define the foldername if your PHP classes reside in a different directory. 
 <pre>
 <code>
-require_once "scr/aload.class.php";
-aload::register(["class", "inc"], "scr/");
+require_once "scripts/aload.class.php";
+aload::register(["class", "inc"], "scripts/");
 </code>
 </pre>
-This example above will register all PHP files containing class and inc in the folder scripts.
+This example above will register all PHP files containing the module name "class" and "inc" in the folder "scripts".
 E.g. email.class.php or utilities.inc.php
 - You may use "**all**" as the first parameter to register all PHP scripts in the specified folder.
-- Leave the parameter for folders blank if your scripts reside in the root directory.
+- Leave the parameter for the foldername blank if your scripts are in your root directory.
 <br>
 <br>
 
