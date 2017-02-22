@@ -27,20 +27,18 @@ git clone https://github.com/thielicious/aLoad.git
 
 ##USAGE
 
-Create an object of it and define the folder if your PHP classes reside in a different directory. 
+<code>aload::register([modules], path);</code>
+Simply register modules and define the foldername if your PHP classes reside in a different directory. 
 <pre>
 <code>
-$aload = new aLoad(); 	// optional
-$aload->classDir("classes/"); 	// optional
-aLoad::register();
+require_once "scr/aload.class.php";
+aload::register(["class", "inc"], "scr/");
 </code>
 </pre>
-And then, include the aLoad class in your php page.
-<pre>
-<code>
-require_once "aLoad.class.php";
-</code>
-</pre>
+This example above will register all PHP files containing class and inc in the folder scripts.
+E.g. email.class.php or utilities.inc.php
+- You may use "**all**" as the first parameter to register all PHP scripts in the specified folder.
+- Leave the parameter for folders blank if your scripts reside in the root directory.
 <br>
 <br>
 
