@@ -44,7 +44,7 @@ aload::register(["class", "inc"], "scripts/");
 This example above will register all PHP files containing the module name "class" and "inc" in the folder "scripts".<br>
 <pre>
 <code>
-require_once "scripts/aload.class.php";
+require_once "aload.class.php";
 aload::register("all");
 </code>
 </pre>
