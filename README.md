@@ -27,7 +27,7 @@ git clone https://github.com/thielicious/aLoad.git
 
 ##USAGE
 
-<code>aload::register(<em>array</em> modules|<em>string</em> "all", [<em>string</em> path]);</code><br>
+<code>aload::register(<em>array</em> module | <em>string</em> "all", [<em>string</em> folderpath]);</code><br>
 Simply register modules and define the foldername if your PHP classes reside in a different directory. 
 <pre>
 <code>
