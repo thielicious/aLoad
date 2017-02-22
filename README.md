@@ -34,7 +34,7 @@ Simply register modules and define the foldername if your PHP classes reside in 
 - You may use "**all**" as the first parameter to register all PHP scripts in the specified folder if you don't use modules.
 - Leave the parameter for the foldername blank if your scripts are in your root directory.
 
-###EXAMPLE
+##EXAMPLE
 <pre>
 <code>
 require_once "scripts/aload.class.php";
