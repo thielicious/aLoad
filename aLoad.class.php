@@ -1,7 +1,7 @@
 <?php
 	
 	/*
-		aLoad 
+		aLoad v1.2
 		(c) 2016 by THIELICIOUS
 		thielicious.github.com
 		----------------------
@@ -12,8 +12,9 @@
 		EXAMPLE:
 			aload::register(["class", "inc"], "scripts/");
 		
-		This example above will register all PHP files containing class and inc in the folder scripts.
-		Use "all" as the first parameter to register all PHP scripts in the specified folder.
+		This example above will register all PHP files containing "class" and "inc" in the folder scripts.
+		Use "all" as the first parameter to register all PHP scripts in the specified folder. Feel free 
+		to add a namespace here.
 	*/
 
 
