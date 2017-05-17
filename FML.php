@@ -5,7 +5,7 @@
 		thielicious.github.io
 		
 		
-		FML (Forum Markup Language) not the abbreviation you'd might think of :) 
+		FML (Forum Markup Language) not the abbreviation you might think of :) 
 		This script is easy to use and can be applied to any existing forum API. 
 		It is a mix of BBCode and Markdown. 
 		
