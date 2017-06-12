@@ -55,4 +55,4 @@ This above will register all PHP files without modules in your root directory.
 
 #### If you encounter any bugs, feel free to open up an [issue](https://github.com/thielicious/aLoad/issues), thank you.<br>
 ---
-[thielicious.github.io] (http://thielicious.github.io)
+[thielicious.github.io](http://thielicious.github.io)
