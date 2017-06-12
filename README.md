@@ -1,11 +1,11 @@
-#aLoad
+# aLoad
 
 (PHP) Automatically loads classes from a given path
 
 ---
 <br>
 
-##INTRODUCTION
+## INTRODUCTION
 
 aLoad ('a' abbr. for **auto**) is a flexible auto loader for classes using a given path. 
 <br>
@@ -25,7 +25,7 @@ git clone https://github.com/thielicious/aLoad.git
 <br>
 
 
-##USAGE
+## USAGE
 
 <code>aload::register(<em>array</em> module | <em>string</em> "all", [<em>string</em> folderpath]);</code>
 
@@ -34,7 +34,7 @@ Simply register modules and define the foldername if your PHP classes reside in 
 - You may use "**all**" as the first parameter to register all PHP scripts in the specified folder if you don't use modules.
 - Leave the parameter for the foldername blank if your scripts are in your root directory.
 
-##EXAMPLE
+## EXAMPLE
 <pre>
 <code>
 require_once "scripts/aload.class.php";
@@ -53,6 +53,6 @@ This above will register all PHP files without modules in your root directory.
 <br>
 
 
-####If you encounter any bugs, feel free to open up an [issue](https://github.com/thielicious/aLoad/issues), thank you.<br>
+#### If you encounter any bugs, feel free to open up an [issue](https://github.com/thielicious/aLoad/issues), thank you.<br>
 ---
 [thielicious.github.io] (http://thielicious.github.io)
