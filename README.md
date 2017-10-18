@@ -12,7 +12,7 @@ aLoad ('a' abbr. for **auto**) is a flexible auto loader for classes using a giv
 <br>
 
 
-##SETUP INFORMATION
+## SETUP INFORMATION
 
 This script requires no additional frameworks or libraries.
 <br>
