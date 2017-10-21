@@ -1,13 +1,13 @@
 # aLoad
 
-(PHP) Automatically loads classes from a given path
+Automatically loads classes from a given path (customized)
 
 ---
 <br>
 
 ## INTRODUCTION
 
-aLoad ('a' abbr. for **auto**) is a flexible auto loader for classes using a given path. 
+aLoad ('a' abbr. for **auto**) is a flexible auto class loader using a module-based separator. 
 <br>
 <br>
 
