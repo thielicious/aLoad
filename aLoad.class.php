@@ -2,10 +2,10 @@
 	
 	/*
 		aLoad v1.2
-		(c) 2016 by THIELICIOUS
-		thielicious.github.com
-		----------------------
+		(c) 2016 by Thielicious
 
+		Automatically loads classes from a given path separated in modules.
+		
 		USAGE:
 			aload::register([modules], path);
 
