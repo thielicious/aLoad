@@ -1,6 +1,6 @@
 # aLoad
 
-Automatically loads classes from a given path (customized)
+Automatically loads classes from a given path separated in modules
 
 ---
 <br>
