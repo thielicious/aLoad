@@ -1,6 +1,6 @@
 # aLoad
 
-Automatically loads PHP clases from a given path based on a modular separator.
+Automatically loads PHP classes from a given path based on a modular separator.
 
 ---
 <br>
@@ -27,7 +27,7 @@ git clone https://github.com/thielicious/aLoad.git
 
 ## USAGE
 
-<code>aload::register(<em>array</em> module || aLocal::ALL, [<em>string</em> folderpath]);</code>
+<code>aLoad::register(<em>array</em> module || aLoad::ALL, [<em>string</em> folderpath]);</code>
 
 Simply register modules and define the foldername if your PHP classes reside in a different directory. 
 - **modules** are separated file contents. Usually classes are named "**class**" e.g. email.class.php and additional code that is included are called "**inc**" e.g. utilities.inc.php. Feel free to name them however you want. 
