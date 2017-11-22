@@ -1,22 +1,24 @@
 <?php
 	
 	/*
-		aLoad v1.2
-		(c) 2016 by Thielicious
+		aLoad v1.4
+		(c) 2016 by THIELICIOUS
+		thielicious.github.com
+		----------------------
 
-		Automatically loads classes from a given path separated in modules.
-		
 		USAGE:
-			aload::register([modules], path);
+			aLoad::register(array [modules] || aLoad::ALL, folderpath);
 
 		EXAMPLE:
-			aload::register(["class", "inc"], "scripts/");
+			aLoad::register(["class", "inc"], "scripts/");
 		
-		This example above will register all PHP files containing "class" and "inc" in the folder scripts.
-		Use "all" as the first parameter to register all PHP scripts in the specified folder. Feel free 
-		to add a namespace here.
+		This example above will register all PHP files containing "class" and "inc" in the folder "scripts".
+		Use the constant "aLoad::ALL" as the first parameter to register PHP scripts without modules. Feel free 
+		to remove the namespace here.
 	*/
 
+	
+	namespace Thielicious\utils\aLoad;
 
 	class aLoad {
 		
@@ -25,14 +27,14 @@
 
 		const 
 			ERR = "[!]Error ".__CLASS__.": ",
-			ALL = "all";
+			ALL = 1;
 		
 		function __construct($mod, string $dir = null) {
 			if (is_array($mod)) {
 				foreach ($mod as $each) {
 					$this->mod[] = $each;
 				}
-			} else if ($mod == "all") {
+			} elseif ($mod == self::ALL) {
 				$this->mod = self::ALL;
 			}
 			if (!is_null($dir)) {
@@ -49,13 +51,16 @@
 			$this->dir = $dir;
 		}
 		
-		public static function register($modules, string $dir) {
+		public static function register($modules, string $dir = null) {
 			new aLoad($modules, $dir);
 		}
 
 		private function load_class(string $class_name) {
 			$scripts = function($module = null) use ($class_name) {
-				$mod = $module ? ".".$module : null;
+				$class_name = preg_match("/(?!\S+\/)[^\/\s]\S+\\\/", $class_name, $m) ? 
+					str_replace($m[0], "", $class_name) : $class_name;
+				$mod = $module ? 
+					".".$module : null;
 				$file = $this->dir.strtolower(str_replace("\\", "/", $class_name)).$mod.".php";
 				return file_exists($file) ? require_once($file) : null;
 			};
@@ -64,15 +69,16 @@
 					foreach ($this->mod as $mod) {
 						$scripts($mod);
 					} 
-				} else if ($this->mod == self::ALL) {
+				} elseif ($this->mod == self::ALL) {
 					$scripts();
 				} else {
 					die(self::ERR."Unknown parameter for module.");
 				}
 			} else {
-				die(self::ERR."No module exists, please set a module first.");
+				die(self::ERR."Please set a module first.");
 			}
 		}
+		
 	}
 
 ?>
