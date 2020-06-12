@@ -1,13 +1,13 @@
 # aLoad
 
-Automatically loads PHP classes from a given path based on a modular separator.
+Automatically loads PHP files from a given path based on a modular separator.
 
 ---
 <br>
 
 ## INTRODUCTION
 
-aLoad ('a' abbr. for **auto**) is a flexible auto class loader primarily based on a modular separator. 
+aLoad ('a' abbr. for **auto**) is a flexible auto file loader primarily based on a modular separator. 
 <br>
 <br>
 
